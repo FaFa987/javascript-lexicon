@@ -54,3 +54,9 @@ let isEqual = n1 === n2;
 let isEqualValue = n1 == n2;
 
 console.log("Is Equal: " + isEqual);
+
+function greet(message){
+    console.log(message);
+    //return message;
+}
+greet("Hi, Welcome to Room");
