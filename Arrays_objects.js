@@ -13,6 +13,8 @@ numbers.pop();
 const filteredArray = numbers.filter (n => n % 2 == 0);
 console.log(filteredArray);
 
+const squaredNumbers = numbers.map((n) => n * n);
+console.log(squaredNumbers);
 
 
 
