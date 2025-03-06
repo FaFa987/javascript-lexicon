@@ -28,6 +28,18 @@ let sum = description + 30 //NaN
 console.log(sum);
 
 const API_URL = "https://google.com";
-API_URL = "https://github.com/";
+//API_URL = "https://github.com/"; // TypeError: Assignment to constant variable.
 
 console.log(API_URL);
+
+let day = "Monday";
+day = "Sunday";
+
+switch(day){
+    case "Monday" :
+    console.log("This is first of weekend")
+    break;
+    default:
+    console.log("not sure")
+
+}
