@@ -43,3 +43,14 @@ switch(day){
     console.log("not sure")
 
 }
+
+let n1 = 10; //Number
+let n2 = "10"; //String
+
+// === used to check equal value and equal type
+// == used to check equal value
+
+let isEqual = n1 === n2;
+let isEqualValue = n1 == n2;
+
+console.log("Is Equal: " + isEqual);
