@@ -69,4 +69,10 @@ function calculate(n1 , n2 , operation){
 };
 console.log(calculate(1,5, addition));
 
-
+function dividision(n1, n2){
+    if(n2 === 0){
+        throw new Error("can not divide by zero");
+        return n1 / n2
+    }
+}
+dividision(5,0);
