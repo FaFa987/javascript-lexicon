@@ -59,4 +59,14 @@ function greet(message){
     console.log(message);
     //return message;
 }
-greet("Hi, Welcome to Room");
+greet("Hi, Welcome to the Room");
+
+const addition = (n1 , n2) => n1 + n2;
+const _greet = message => console.log(message);
+
+function calculate(n1 , n2 , operation){
+    return operation(n1 , n2)
+};
+console.log(calculate(1,5, addition));
+
+
