@@ -75,4 +75,9 @@ function dividision(n1, n2){
         return n1 / n2
     }
 }
-dividision(5,0);
+//dividision(5,0);
+try{
+    console.log(dividision(5,0));
+}catch(error){
+    console.log("cought an Error: " , error.message)
+}
