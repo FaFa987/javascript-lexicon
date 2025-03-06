@@ -81,3 +81,16 @@ try{
 }catch(error){
     console.log("cought an Error: " , error.message)
 }
+
+let text = "Hello, World!";
+
+console.log(text.toLowerCase());
+console.log(text.toUpperCase());
+console.log(text.indexOf("World"));
+console.log(text.slice(0, 5));
+
+let date = new Date();
+console.log(date);
+
+let nextLectureDate = new Date("2025-03-04T09:00:00");
+
