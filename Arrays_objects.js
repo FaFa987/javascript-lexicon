@@ -6,8 +6,13 @@ console.log(numbers[20]); // undefined
 
 numbers.push(8);
 numbers.push(5, 6, 7);
-console.log(numbers);
 
 numbers.pop();
+// console.log(numbers); // [1, 2, 3, 4, 8, 5, 6]
+
+const filteredArray = numbers.filter (n => n % 2 == 0);
+console.log(filteredArray);
+
+
 
 
