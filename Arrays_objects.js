@@ -22,6 +22,8 @@ let fruits = ["apple", "banana", "orange", "grape"];
 fruits.splice(2, 1, "Kiwi");
 console.log(fruits);
 
+let indexOfBanana = fruits.indexOf("banana");
+console.log(indexOfBanana);
 
 
 
