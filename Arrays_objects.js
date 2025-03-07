@@ -17,7 +17,10 @@ console.log(filteredArray);
 const squaredNumbers = numbers.map((n) => n * n);
 console.log(squaredNumbers);
 
-numbers.forEach( num => console.log(num));
+// numbers.forEach( num => console.log(num));
+let fruits = ["apple", "banana", "orange", "grape"];
+fruits.splice(2, 0, "Kiwi");
+console.log(fruits);
 
 
 
