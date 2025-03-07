@@ -23,7 +23,36 @@ fruits.splice(2, 1, "Kiwi");
 console.log(fruits);
 
 let indexOfBanana = fruits.indexOf("banana");
-console.log(indexOfBanana);
+fruits.splice(indexOfBanana, 1);
 
+console.log(fruits);
+
+console.log("-----------------");
+
+const person = {
+  name: "John",
+  age: 30,
+  isStudent: true,
+  address: {
+    city: "NY",
+    country: "USA",
+  },
+};
+
+console.log(person.name);
+console.log(person.address.city);
+console.log("Is Studen: " + person.isStudent);
+
+person["isStudent"] = false;
+console.log("Is Studen: " + person.isStudent);
+
+const menus = [{ item: "Test" }, { item: "Test 2" }];
+
+let itemListElements = menus.map((element) => {
+  let ilElement = "<li>" + element.item + "</li>";
+  return ilElement;
+});
+
+console.log(itemListElements);
 
 
