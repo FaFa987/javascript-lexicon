@@ -7,6 +7,9 @@
 </head>
 <body>
     <div id="main">This is JS party</div>
+    <button onclick="login()">
+        Login
+    </button>
     <script>
         console.log("Hello JS");
 
@@ -17,6 +20,11 @@
         pElement.innerHTML = "this is a text.";
 
         mainElement.appendChild(pElement);
+
+        function login(){
+            console.log("login function is execute...");
+            alert("Login operation is done.");
+        }
 
     </script>
 </body>
