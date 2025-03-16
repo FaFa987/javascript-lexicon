@@ -58,8 +58,17 @@ const showData = () => {
         console.log("Table is already present!")
     }
 
+};
 
-}
+const hideTable = () => {
+    console.log("Hide function has been triggered!");
+
+    const table = document.getElementById("dynamicTable");
+
+    if(table){
+        table.remove();
+    }
+};
 
     /*
 <thead>
