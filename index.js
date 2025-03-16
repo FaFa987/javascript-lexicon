@@ -103,5 +103,10 @@ const validateAndSubmit = () => {
         document.getElementById("email").classList.remove("is-invalid")
     }
 
-    console.log("firstname: "+ firstname + " lastname: "+ lastname + " email: "+email);
+    console.log("firstname: "+ firstname + " ,lastname: "+ lastname + " ,email: "+email);
 }
+
+const isValidEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+};
