@@ -10,3 +10,24 @@ const data = [
 const table = document.createElement("table"); // <table></table>
 table.id = "dynamicTable"; // <table id="dynamicTable"></table>
 table.classList.add("table" , "table-striped") // <table id="dynamicTable" class="table table-striped">
+
+const thead = document.createElement("thead");
+const headerRow = document.createElement("tr");
+
+const headerText = ["Firstname","Lastname","Email"];
+
+headerText.forEach(headertext => {
+    const th = document.createElement("th");
+    th.textContent = headertext;
+
+    headerRow.appendChild("th");
+});
+
+/*
+<thead>
+<tr>
+  <th>Firstname</th>
+  <th>Lastname</th>
+  <th>Email</th>
+</tr>
+*/
