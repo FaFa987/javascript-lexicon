@@ -85,5 +85,23 @@ const validateAndSubmit = () => {
     const lastname = document.getElementById("lastName").value.trim();
     const email = document.getElementById("email").value.trim();
 
-    console.log(firstname+" " + lastname+" " + email+" ");
+    if(!firstname){
+        document.getElementById("firstName").classList.add("is-invalid")
+    } else {
+        document.getElementById("firstName").classList.remove("is-invalid")
+    }
+
+    if(!lastname){
+        document.getElementById("lastName").classList.add("is-invalid")
+    } else {
+        document.getElementById("lastName").classList.remove("is-invalid")
+    }
+
+    if(!email){
+        document.getElementById("email").classList.add("is-invalid")
+    } else {
+        document.getElementById("email").classList.remove("is-invalid")
+    }
+
+    console.log("firstname: "+ firstname + " lastname: "+ lastname + " email: "+email);
 }
