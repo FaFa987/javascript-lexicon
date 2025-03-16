@@ -26,6 +26,9 @@ headerText.forEach(headertext => {
 thead.appendChild(headerRow);
 table.appendChild(thead);
 
+const dataTableSection = document.getElementById("data-table");
+dataTableSection.appendChild(table);
+
 /*
 <thead>
 <tr>
