@@ -7,7 +7,9 @@ const data = [
     {firstname: "July", lastname: "Dooley", email: "july@example.com"},
 ]
 
-const table = document.createElement("table"); // <table></table>
+const showData = () => {
+
+    const table = document.createElement("table"); // <table></table>
 table.id = "dynamicTable"; // <table id="dynamicTable"></table>
 table.classList.add("table" , "table-striped") // <table id="dynamicTable" class="table table-striped">
 
@@ -29,18 +31,10 @@ table.appendChild(thead);
 const dataTableSection = document.getElementById("data-table");
 dataTableSection.appendChild(table);
 
-/*
-<thead>
-<tr>
-  <th>Firstname</th>
-  <th>Lastname</th>
-  <th>Email</th>
-</tr>
-*/
 
 const tbody = document.createElement("tbody");
 
-    data.forEach((person) => {
+    data.forEach( person => {
       const tr = document.createElement("tr");
 
       const td1 = document.createElement("td");
@@ -59,3 +53,14 @@ const tbody = document.createElement("tbody");
     });
 
     table.appendChild(tbody);
+    
+}
+
+    /*
+<thead>
+<tr>
+  <th>Firstname</th>
+  <th>Lastname</th>
+  <th>Email</th>
+</tr>
+*/
