@@ -20,8 +20,11 @@ headerText.forEach(headertext => {
     const th = document.createElement("th");
     th.textContent = headertext;
 
-    headerRow.appendChild("th");
+    headerRow.appendChild(th);
 });
+
+thead.appendChild(headerRow);
+table.appendChild(thead);
 
 /*
 <thead>
