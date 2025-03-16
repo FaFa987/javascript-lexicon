@@ -78,3 +78,12 @@ const hideTable = () => {
   <th>Email</th>
 </tr>
 */
+
+const validateAndSubmit = () => {
+
+    const firstname = document.getElementById("firstName").value.trim();
+    const lastname = document.getElementById("lastName").value.trim();
+    const email = document.getElementById("email").value.trim();
+
+    console.log(firstname+" " + lastname+" " + email+" ");
+}
