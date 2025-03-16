@@ -37,3 +37,25 @@ dataTableSection.appendChild(table);
   <th>Email</th>
 </tr>
 */
+
+const tbody = document.createElement("tbody");
+
+    data.forEach((person) => {
+      const tr = document.createElement("tr");
+
+      const td1 = document.createElement("td");
+      td1.textContent = person.firstname;
+      tr.appendChild(td1);
+
+      const td2 = document.createElement("td");
+      td2.textContent = person.lastname;
+      tr.appendChild(td2);
+
+      const td3 = document.createElement("td");
+      td3.textContent = person.email;
+      tr.appendChild(td3);
+
+      tbody.appendChild(tr);
+    });
+
+    table.appendChild(tbody);
